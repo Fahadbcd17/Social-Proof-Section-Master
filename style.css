@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    Font-size: 15px
+}
+
+/* Top-Section-Start */
+
+.section-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left{
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.top-left h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: .9rem;
+    color:  hsl(300, 43%, 22%);
+}
+
+.top-left p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: hsl(300, 10%, 68%);
+    margin-top: 30px;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.review{
+    margin: 0 auto;
+    background-color: hsl(300, 16%, 91%);
+    margin-top: 20px;
+    padding: 20px;
+    width: 75%;
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px  hsl(300, 16%, 91%) ;
+}
+
+.review span{
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top: 3px;
+    color:  hsl(300, 43%, 22%);
+}
+
+/* Top-End */
+
+/* Card-Section-Start */
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.card{
+    text-align: center;
+    margin: 20px 40px;
+    background-color: hsl(300, 41%, 27%);
+    border-radius: 7px;
+    min-height: 250px;
+    padding: 20px 40px 0 40px;
+}
+
+.card-head{
+    display: flex; 
+    align-items: center;
+}
+
+.card-head img{
+     border-radius: 50%;
+     width: 70px;
+}
+
+.card-header-text{
+    /* line-height: .5rem; */
+    padding-left: 40px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+
+.card-header-text h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card-header-text h4{
+    color: hsl(300, 51%, 44%);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card p{
+    margin-top: 25px;
+    color: hsl(0, 5%, 81%);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+/* Card-End */
+
+
+/* Media-For_responsive */
+
+@media screen and (min-width: 850px){
+    .section-top{
+        flex-direction: row;
+        overflow: fixed;
+    }
+    .top-left{
+        text-align: start;
+        max-width: 40%;
+        margin-left: 5%;
+    }
+
+    .review span{
+        display: inline-block;
+        padding-left: 25px;
+    }
+    .review{
+        width: 430px;
+        margin-right: 30px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1000px){
+    .review{
+        margin-right: 30px;
+    }
+    .review-2{
+        position: relative;
+        left: 20px;
+    }
+    .review-3{
+        position: relative;
+        left: 40px;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .review-2{
+        position: relative;
+        left: 60px;
+    }
+    .review-3{
+        position: relative;
+        left: 120px;
+    }
+}
